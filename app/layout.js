@@ -1,6 +1,7 @@
 import localFont from 'next/font/local'
 import Navbar from './components/Navbar'
 import "./globals.css"
+import { MobileMenuProvider } from './context/MobileMenuContext'
 
 // define a custom font
 export const VT323 = localFont({
@@ -33,8 +34,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/* <Navbar /> */}
-        {children}
+        <MobileMenuProvider>
+          {<Navbar /> }
+          {children}
+        </MobileMenuProvider>
       </body>
     </html>
   );
