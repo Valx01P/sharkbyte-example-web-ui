@@ -9,6 +9,8 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
+      <Statistics />
+      <ComingSoon />
       <Sponsors />
       <DropDown />
       <Socials />
