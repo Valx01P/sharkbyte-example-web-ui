@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <section className=
+    <section id='hero' className=
     "h-dvh w-dvw hero-bg flex justify-center items-center flex-row max-[700px]:flex-col relative"
     >
 

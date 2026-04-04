@@ -43,19 +43,18 @@ const Navbar = () => {
 
       
       {/* LOGO */}
-      <div className="flex justify-center items-center w-min">
-        <Link href="/" className="text-[35px] transition-transform duration-300 hover:animate-[wiggle_2s_ease-in-out_infinite] cursor-pointer pl-4 max-[1350px]:text-[50x]">
-          SharkByte
-        </Link>
+      <div className="flex justify-center items-center w-min z-50">
+        <button onClick={() => scrollToSection('hero')} className="text-[35px] transition-transform duration-300 cursor-pointer pl-4 max-[1350px]:text-[35px] hover:animate-pulse">SharkByte</button>
       </div>
 
       {/* _____ DESKTOP _____ */}
       <div className='max-[1026px]:hidden flex items-center w-min px-4 max-[1350px]:px-2'>
         {/* Nav Links */}
         <ul className="flex justify-center items-center gap-6 w-full max-[1350px]:gap-10">
-          <button onClick={() => scrollToSection('Statistics')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full max-[1350px]:text-[30px] cursor-pointer">Statistics</button>
-          <button onClick={() => scrollToSection('Sponsors')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full max-[1350px]:text-[30px] cursor-pointer">Sponsors</button>
-          <button onClick={() => scrollToSection('Socials')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full max-[1350px]:text-[30px] cursor-pointer">Socials</button>
+
+          <button onClick={() => scrollToSection('statistics')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full max-[1350px]:text-[30px] cursor-pointer">Statistics</button>
+          <button onClick={() => scrollToSection('sponsors')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full max-[1350px]:text-[30px] cursor-pointer">Sponsors</button>
+          <button onClick={() => scrollToSection('socials')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full max-[1350px]:text-[30px] cursor-pointer">Socials</button>
         </ul>
       </div>
 

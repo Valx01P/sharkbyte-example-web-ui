@@ -3,7 +3,6 @@ import Hero from './sections/Hero'
 import Statistics from './sections/Statistics'
 import ComingSoon from './sections/ComingSoon'
 import Sponsors from './sections/Sponsors'
-import DropDown from './sections/DropDown'
 import Socials from './sections/Socials'
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
       <Statistics />
       <ComingSoon />
       <Sponsors />
-      <DropDown />
       <Socials />
     </>
   )
