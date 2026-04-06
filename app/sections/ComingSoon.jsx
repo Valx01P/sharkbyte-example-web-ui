@@ -1,6 +1,3 @@
-import Image from 'next/image'
-// Add in the corresponding background image for the coming soon section
-
 const ComingSoon = () => 
 {
 
