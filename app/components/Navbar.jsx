@@ -52,9 +52,9 @@ const Navbar = () => {
         {/* Nav Links */}
         <ul className="flex justify-center items-center gap-6 w-full max-[1350px]:gap-10">
 
-          <button onClick={() => scrollToSection('statistics')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full max-[1350px]:text-[30px] cursor-pointer">Statistics</button>
-          <button onClick={() => scrollToSection('sponsors')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full max-[1350px]:text-[30px] cursor-pointer">Sponsors</button>
-          <button onClick={() => scrollToSection('socials')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full max-[1350px]:text-[30px] cursor-pointer">Socials</button>
+          <button onClick={() => scrollToSection('statistics')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-purple-400 after:transition-all after:duration-300 hover:after:w-full max-[1350px]:text-[30px] hover:text-purple-400 cursor-pointer">Statistics</button>
+          <button onClick={() => scrollToSection('sponsors')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-purple-400 after:transition-all after:duration-300 hover:after:w-full max-[1350px]:text-[30px] hover:text-purple-400 cursor-pointer">Sponsors</button>
+          <button onClick={() => scrollToSection('socials')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-purple-400 after:transition-all after:duration-300 hover:after:w-full max-[1350px]:text-[30px] hover:text-purple-400 cursor-pointer">Socials</button>
         </ul>
       </div>
 
