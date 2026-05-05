@@ -1,5 +1,10 @@
 const Statistics = () => 
 {
+    const stats = [
+        { text: "36 hours of non-stop coding", hoverColor: "hover:text-blue-700" },
+        { text: "Innovative ideas and projects", hoverColor: "hover:text-pink-400" },
+        { text: "Expert-led workshops", hoverColor: "hover:text-yellow-400" },
+    ];
 
     // Draw the following statistics in a pixel art style on-screen
     return (
@@ -13,9 +18,9 @@ const Statistics = () =>
                 <div className = "flex flex-col gap-6 md:gap-12">
 
                     {/* THE TEXT: Starts at text-2xl for phones, grows to text-4xl on tablets/laptops */}
-                    <h2 className="font-bold text-2xl md:text-4xl hover:text-blue-700">36 hours of non-stop coding</h2>
-                    <h2 className="font-bold text-2xl md:text-4xl hover:text-pink-400">Innovative ideas and projects</h2>
-                    <h2 className="font-bold text-2xl md:text-4xl hover:text-yellow-400">Expert-led workshops</h2>
+                    {stats.map((stat, index) => (
+                        <h2 key={index} className={`font-bold text-2xl md:text-4xl ${stat.hoverColor}`}>{stat.text}</h2>
+                    ))}
 
                 </div>
 
