@@ -10,6 +10,10 @@ ex.
 /* tailwindcss v4 unique class creator directive */
 @theme {
   --font-pixel: 'VT323', monospace;
+  --breakpoint-mobile: 360px;
+  --breakpoint-tablet: 481px;
+  --breakpoint-laptop: 769px;
+  --breakpoint-desktop: 1025px;
 }
 
 /* pseudo-class, defines highest level element */
