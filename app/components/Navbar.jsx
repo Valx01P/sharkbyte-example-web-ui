@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
    <nav className="bg-gradient-to-b from-gray-950 via-gray-950 to-gray-900 fixed top-0 z-10 h-[60px] w-full text-white pixel-shadow-2">
-     <div className="flex justify-between h-full relative px-4 max-[1026px]:px-0">
+     <div className="flex justify-between h-full relative px-4 max-laptop:px-0">
       {
         (pathname === '/') &&
         <a href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white" target="_blank" rel="noopener noreferrer" className='w-[115px] h-[175px] max-[1350px]:w-[100px] max-[1350px]:h-[145px] fixed top-[60px] left-[10px]'>
@@ -36,7 +36,6 @@ const Navbar = () => {
             alt="mlh-logo"
             width={200}
             height={150}
-            /*className="w-full h-full max-[650px]:w-[70px] max-[650px]:h-[125px] max-[500px]:relative max-[500px]:left-[-8px]"*/
               className=" w-[100px] h-[100px] tablet:w-[125px] tablet:h-[125px] laptop:w-[150px] laptop:h-[150px] desktop:w-full desktop:h-full"
           />
         </a>
@@ -45,25 +44,25 @@ const Navbar = () => {
       
       {/* LOGO */}
       <div className="flex justify-center items-center w-min z-50">
-        <button onClick={() => scrollToSection('hero')} className="text-[35px] transition-transform duration-300 cursor-pointer pl-4 max-[1350px]:text-[35px] hover:animate-pulse">SharkByte</button>
+        <button onClick={() => scrollToSection('hero')} className=" text-[35px] transition-transform duration-300 cursor-pointer pl-4 hover:animate-pulse">SharkByte</button>
       </div>
 
       {/* _____ DESKTOP _____ */}
-      <div className='max-[1026px]:hidden flex items-center w-min px-4 max-[1350px]:px-2'>
+      <div className= 'flex items-center max-desktop:hidden px-4 desktop:px-2'>
         {/* Nav Links */}
-        <ul className="flex justify-center items-center gap-6 w-full max-[1350px]:gap-10">
+        <ul className="flex justify-center items-center w-full desktop:gap-10">
 
-          <button onClick={() => scrollToSection('statistics')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-purple-400 after:transition-all after:duration-300 hover:after:w-full max-[1350px]:text-[30px] hover:text-purple-400 cursor-pointer">Statistics</button>
-          <button onClick={() => scrollToSection('sponsors')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-purple-400 after:transition-all after:duration-300 hover:after:w-full max-[1350px]:text-[30px] hover:text-purple-400 cursor-pointer">Sponsors</button>
-          <button onClick={() => scrollToSection('socials')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-purple-400 after:transition-all after:duration-300 hover:after:w-full max-[1350px]:text-[30px] hover:text-purple-400 cursor-pointer">Socials</button>
+          <button onClick={() => scrollToSection('statistics')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-purple-400 after:transition-all after:duration-300 hover:after:w-full desktop:text-[30px] hover:text-purple-400 cursor-pointer">Statistics</button>
+          <button onClick={() => scrollToSection('sponsors')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-purple-400 after:transition-all after:duration-300 hover:after:w-full desktop:text-[30px] hover:text-purple-400 cursor-pointer">Sponsors</button>
+          <button onClick={() => scrollToSection('socials')} className="flex justify-center items-center relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-purple-400 after:transition-all after:duration-300 hover:after:w-full desktop:text-[30px] hover:text-purple-400 cursor-pointer">Socials</button>
         </ul>
       </div>
 
       {/* _____ DESKTOP _____ */}
-      <div className='max-[1026px]:hidden flex items-center justify-end relative'>
+      <div className='max-desktop:hidden flex items-center justify-end relative'>
         <div className="flex items-center">
           {/* Socials */}
-          <div className='flex gap-5 pr-2 max-[1350px]:text-[25px]'>
+          <div className='flex gap-5 pr-2 laptop:text-[25px]'>
             <a href="https://discord.com/invite/init" target="_blank" rel="noopener noreferrer">
               <svg className='transition-transform duration-300 hover:scale-110' stroke="currentColor" fill="currentColor" viewBox="0 0 640 512" focusable="false" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853a1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83a1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815a1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"></path></svg>
             </a>
@@ -78,7 +77,7 @@ const Navbar = () => {
       </div>
 
        {/* _____ MOBILE _____ */}
-       <div className="min-[1026px]:hidden flex w-full">
+       <div className="min-desktop:hidden flex w-full">
          <div className="flex justify-end items-center w-full pr-4">
            <Image
              className="cursor-pointer transition-transform duration-300 hover:scale-110 filter invert"
@@ -100,12 +99,12 @@ const Navbar = () => {
              ></div>
              
              {/* Sidebar menu */}
-             <div className={`fixed top-0 right-0 h-dvh w-full max-w-[350px] bg-gradient-to-r from-gray-900 via-gray-950 to-gray-950 text-white z-50 transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+             <div className={`fixed top-0 right-0 h-dvh w-full mobile:w-[350px] space-y-10 bg-gradient-to-r from-gray-900 via-gray-950 to-gray-950 text-white z-50 transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                {/* Close button */}
                <div className="flex justify-end p-4">
                  <Image 
                    className="cursor-pointer transition-transform duration-300 hover:scale-110 filter invert" 
-                   src="/svgs/x.svg" 
+                   src="/svgs/menu.svg" 
                    alt="close" 
                    width={26} 
                    height={26}
@@ -116,13 +115,11 @@ const Navbar = () => {
                {/* Menu content */}
                <div className="flex flex-col items-end pr-8 space-y-6">
                  {/* Nav Links */}
-                 <div className="flex flex-col items-end space-y-4">
-                   <button onClick={() => { scrollToSection('about'); setIsMobileMenuOpen(false); }} className="text-right relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">About</button>
-                   <button onClick={() => { scrollToSection('schedule'); setIsMobileMenuOpen(false); }} className="text-right relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Schedule</button>
-                   <button onClick={() => { scrollToSection('location'); setIsMobileMenuOpen(false); }} className="text-right relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Location</button>
-                   <button onClick={() => { scrollToSection('faq'); setIsMobileMenuOpen(false); }} className="text-right relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">FAQ</button>
-                   <button onClick={() => { scrollToSection('sponsors'); setIsMobileMenuOpen(false); }} className="text-right relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Sponsors</button>
-                 </div>
+                 <div className="flex flex-col items-end space-y-15">
+                   <button onClick={() => { scrollToSection('statistics'); setIsMobileMenuOpen(false); }} className="text-right relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full text-[30px]">Statistics</button>
+                   <button onClick={() => { scrollToSection('sponsors'); setIsMobileMenuOpen(false); }} className="text-right relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full text-[30px]">Sponsors</button>
+                   <button onClick={() => { scrollToSection('socials'); setIsMobileMenuOpen(false); }} className="text-right relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full text-[30px]">Socials</button>
+                   </div>
                  
                  {/* Social icons */}
                  <div className="flex gap-3 pt-4">
