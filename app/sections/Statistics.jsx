@@ -1,9 +1,9 @@
 const Statistics = () => 
 {
     const stats = [
-        { text: "36 hours of non-stop coding", hoverColor: "hover:text-blue-700" },
-        { text: "Innovative ideas and projects", hoverColor: "hover:text-pink-400" },
-        { text: "Expert-led workshops", hoverColor: "hover:text-yellow-400" },
+        { text: "200+ Attendees", hoverColor: "hover:text-blue-700" },
+        { text: "130 Participants", hoverColor: "hover:text-pink-400" },
+        { text: "49 Completed Projects", hoverColor: "hover:text-yellow-400" },
     ];
 
     // Draw the following statistics in a pixel art style on-screen
