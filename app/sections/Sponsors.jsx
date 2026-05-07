@@ -14,7 +14,9 @@ const Sponsors = () => {
       href: "https://www.mdc.edu/entec/",
       src: "https://i.ibb.co/DfLvZNcc/entec.png",
       alt: "entec_mdc_logo",
-      className: "max-[1050px]:w-[120px] max-[700px]:w-[100px]"
+      height: 90,
+      width: 180,
+      className: "w-[180px] max-[1050px]:w-[120px] max-[700px]:w-[100px]"
     },
     {
       href: "https://www.roocapital.com/",
@@ -22,7 +24,7 @@ const Sponsors = () => {
       alt: "roo_capital_logo",
       height: 170,
       width: 180,
-      className: "px-1 max-[1050px]:w-[140px] max-[1050px]:h-[120px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
+      className: "w-[180px] px-1 max-[1050px]:w-[140px] max-[1050px]:h-[120px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
     },
     /* {
       href: "https://www.perplexity.ai/",
@@ -44,13 +46,17 @@ const Sponsors = () => {
       href: "https://www.purebuttons.com/",
       src: "https://i.ibb.co/x42zDFb/pure-buttons.png",
       alt: "pure_buttons_logo",
-      className: "max-[1050px]:w-[120px] max-[700px]:w-[110px]"
+      height: 90,
+      width: 180,
+      className: "w-[180px] max-[1050px]:w-[120px] max-[700px]:w-[110px]"
     },
     {
       href: "https://4geeks.com/",
       src: "https://i.ibb.co/BHd04wnq/4geeks.png",
       alt: "4_geeks_academy_logo",
-      className: "max-[1050px]:w-[120px] max-[700px]:w-[110px]"
+      height: 90,
+      width: 180,
+      className: "w-[180px] max-[1050px]:w-[120px] max-[700px]:w-[110px]"
     },
     {
       href: "https://cybriant.com/",
@@ -58,7 +64,7 @@ const Sponsors = () => {
       alt: "cybriant_logo",
       height: 170,
       width: 170,
-      className: "max-[1050px]:w-[160px] max-[1050px]:h-[150px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
+      className: "w-[180px] max-[1050px]:w-[160px] max-[1050px]:h-[150px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
     },
     {
       href: "https://miamitechworks.org/",
@@ -66,7 +72,7 @@ const Sponsors = () => {
       alt: "miami_tech_works_logo",
       height: 170,
       width: 180,
-      className: "px-1 max-[1050px]:w-[140px] max-[1050px]:h-[120px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
+      className: "w-[180px] px-1 max-[1050px]:w-[140px] max-[1050px]:h-[120px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
     },
     {
       href: "https://www.redbull.com/",
@@ -74,7 +80,7 @@ const Sponsors = () => {
       alt: "redbull_logo",
       height: 170,
       width: 180,
-      className: "px-1 max-[1050px]:w-[140px] max-[1050px]:h-[120px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
+      className: "w-[180px] px-1 max-[1050px]:w-[140px] max-[1050px]:h-[120px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
     },
     {
       href: "https://www.reactmiami.com/",
@@ -82,7 +88,7 @@ const Sponsors = () => {
       alt: "react_miami_logo",
       height: 160,
       width: 170,
-      className: "px-1 max-[1050px]:w-[140px] max-[1050px]:h-[120px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
+      className: "w-[180px] px-1 max-[1050px]:w-[140px] max-[1050px]:h-[120px] max-[700px]:w-[120px] max-[700px]:h-[120px] max-[700px]:hover:scale-100"
     }
   ];
 
@@ -97,13 +103,17 @@ const Sponsors = () => {
       rel="noopener noreferrer" 
       className="my-0.5 flex justify-center items-center transition-transform duration-300 hover:scale-105 border-3 border-gray-600 pixel-shadow bg-gradient-to-br from-white to-gray-300 py-1.5 min-h-[180px] min-w-[180px] max-[1350px]:min-w-[160px] max-[1350px]:min-h-[160px] max-[1050px]:min-w-[140px] max-[1050px]:min-h-[140px] max-[850px]:min-w-[120px] max-[850px]:min-h-[120px] max-[750px]:min-w-[110px] max-[750px]:min-h-[110px] max-[700px]:min-w-[100px] max-[700px]:min-h-[100px] max-[700px]:py-1 flex-shrink-0"
     >
-      <Image
-        src={sponsor.src}
-        height={sponsor.height || 130}
-        width={sponsor.width || 130}
-        alt={sponsor.alt}
-        className={sponsor.className}
-      />
+      <div  className = {`flex justify-center items-center ${sponsor.className || 'w-[130px]'}`}>
+        <Image
+          src={sponsor.src}
+          height={sponsor.height || 130}
+          width={sponsor.width || 130}
+          alt={sponsor.alt}
+          sizes="(max-width: 700px) 100px, (max-width: 1050px) 120px, 180px"
+          className="object-contain"
+          style={{ width: '100%', height: 'auto' }}
+        />
+      </div>
     </a>
   );
 
