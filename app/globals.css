@@ -40,6 +40,9 @@ body {
 
 /* css backgrounds with images */
 .hero-bg,
+.stats-bg,
+.comingsoon-bg,
+.sponsors-bg,
 .socials-bg {
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,6 +52,21 @@ body {
 }
 
 .hero-bg {
+  background-image: url('https://ibb.co/JwZM66Mh');
+  background-position: center;
+}
+
+.stats-bg {
+  background-image: url('https://ibb.co/MkpHRXpx');
+  background-position: center;
+}
+
+.comingsoon-bg {
+  background-image: url('https://ibb.co/nsq1s20m');
+  background-position: center;
+}
+
+.sponsors-bg {
   background-image: url('https://i.ibb.co/rKcRScGt/section-team.png');
   background-position: center;
 }

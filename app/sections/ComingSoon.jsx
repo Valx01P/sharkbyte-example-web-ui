@@ -4,7 +4,7 @@ const ComingSoon = () =>
     // Draw the following coming soon message in a pixel art style on-screen
     return (
 
-        <section id = "coming-soon" className = "w-screen h-screen flex items-center justify-center relative overflow-hidden bg-green-900">
+        <section id = "coming-soon" className = "w-screen h-screen flex items-center justify-center relative overflow-hidden comingsoon-bg">
 
             {/* THE BOX: Starts at p-8 for phones, grows to p-16 on tablets/laptops */}
             <div className = "bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white border-3 border-gray-600 pixel-shadow p-8 md:p-16 relative">
