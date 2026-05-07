@@ -10,10 +10,10 @@ export default function Hero() {
         <Image
           src="/svgs/logo.svg"
           alt="SharkByte Logo"
-          width={200}
-          height={200}
+          width={100}
+          height={100}
           priority
-          className=""
+          className="w-[300px] h-[300px] tablet:w-[350px] tablet:h-[350px] laptop:w-[400px] laptop:w-[400px] desktop:w-full desktop:h-full"
         />
       </div>
 

@@ -113,12 +113,12 @@ const Sponsors = () => {
         {/* TITLE */}
         <div className="mb-3 max-[850px]:mb-2 max-[750px]:mb-1.5 max-[650px]:mb-1 relative">
           <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white px-4 py-2 border-3 border-gray-600 pixel-shadow max-[850px]:px-3 max-[850px]:py-1.5 max-[650px]:px-3 max-[650px]:py-1">
-            <h1 className="text-5xl font-bold text-center max-[1350px]:text-4xl max-[850px]:text-3xl max-[650px]:text-2xl max-[500px]:text-[22px]">Sponsored By</h1>
+            <h1 className="font-bold text-center text-[30px] laptop:text-[40px] desktop:text-[50px]">Sponsored By</h1>
           </div>
         </div>
 
         {/* DESKTOP TWO-ROW CAROUSEL */}
-        <div className="max-[650px]:hidden relative border-x-8 border-x-gray-900 max-[850px]:border-x-6 max-[750px]:border-x-4 w-full max-w-4xl mx-auto overflow-hidden">
+        <div className="max-laptop:hidden relative border-x-8 border-x-gray-900 max-[850px]:border-x-6 max-[750px]:border-x-4 min-desktop:w-full max-w-4xl mx-auto overflow-hidden">
           <div className="flex flex-col gap-0.5">
             {/* TOP ROW */}
             <div className="marquee overflow-hidden">
@@ -137,7 +137,7 @@ const Sponsors = () => {
         </div>
 
       {/* MOBILE TWO-ROW SCROLL */}
-      <div className="min-[651px]:hidden relative w-full overflow-x-auto pb-1">
+      <div className="min-laptop:hidden relative w-full overflow-x-auto pb-1">
         <div className="flex flex-col gap-1.5">
           {/* Top row - First 5 sponsors */}
           <div className="flex gap-1.5 px-3" style={{ width: 'max-content' }}>
@@ -155,14 +155,14 @@ const Sponsors = () => {
       </div>
 
       {/* MOBILE SCROLL INDICATOR */}
-      <div className="min-[651px]:hidden mt-2 max-[500px]:mt-1 text-white font-bold text-sm text-center max-[650px]:text-xs max-[500px]:text-[22px]">
+      <div className="min-laptop:hidden mt-2 max-[500px]:mt-1 text-white font-bold text-sm text-center max-[650px]:text-xs max-[500px]:text-[22px]">
         ← Scroll horizontally →
       </div>
         
       {/* SPONSOR CTA */}
-      <div className="w-full max-w-4xl relative mx-auto max-[650px]:max-w-[500px] max-[600px]:max-w-[400px] max-[500px]:max-w-[360px] max-[390px]:max-w-[300px] mt-3 max-[850px]:mt-2 max-[750px]:mt-1.5 max-[650px]:mt-1">
+      <div className="relative w-[400px] laptop:w-[700px] desktop:w-[850px] mt-3 max-[850px]:mt-2 max-[750px]:mt-1.5 max-[650px]:mt-1">
         <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white px-3 py-2.5 border-3 border-gray-600 pixel-shadow max-[850px]:py-2 max-[650px]:px-2 max-[650px]:py-1.5">
-          <p className="text-center text-sm max-[1350px]:text-[24px] max-[850px]:text-[22px] max-[500px]:text-[19px]">
+          <p className="text-center text-[20px] laptop:text-[20px] desktop:text-[30px]">
             Want to sponsor? Email us at{" "}
             <a
               href="mailto:mdc-north@weareinit.org"
