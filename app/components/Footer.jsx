@@ -7,7 +7,7 @@ const Footer = () => {
 
         {/* COPYRIGHT */}
         <div className="flex items-center">
-          <p className="text-sm max-[1350px]:text-[24px] text-blue-300 max-[1050px]:text-xs max-[500px]:text-[22px] max-[390px]:text-[20px]">
+          <p className="text-blue-300 text-[30px] min-tablet:text-[40px]">
             © {currentYear} SharkByte
           </p>
         </div>
@@ -15,9 +15,9 @@ const Footer = () => {
         {/* LINKS */}
         <div
           className="
-            flex gap-15 max-[1150px]:gap-4 text-sm max-[1350px]:text-[25px] pt-[3px]
-            max-[750px]:grid max-[750px]:grid-cols-2 max-[750px]:gap-y-2 max-[500px]:text-[20px]
-            max-[390px]:grid-cols-1 max-[390px]:text-center max-[390px]:my-2 max-[390px]:text-[19px]
+            flex gap-30 mobile:text-[20px] desktop:text-[20px] pt-[3px]
+            max-tablet:grid max-tablet:grid-cols-2 max-tablet:gap-y-2 
+            mobile:grid-cols-1 max-mobile:text-center max-mobile:my-2 max-mobile:text-[19px]
           "
         >
           <a

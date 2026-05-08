@@ -28,20 +28,7 @@ const Navbar = () => {
   return (
    <nav className="bg-gradient-to-b from-gray-950 via-gray-950 to-gray-900 fixed top-0 z-10 h-[60px] w-full text-white pixel-shadow-2">
      <div className="flex justify-between h-full relative px-4 max-laptop:px-0">
-      {
-        (pathname === '/') &&
-        <a href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white" target="_blank" rel="noopener noreferrer" className='w-[115px] h-[175px] max-[1350px]:w-[100px] max-[1350px]:h-[145px] fixed top-[60px] left-[10px]'>
-          <Image
-            src="/svgs/mlh.svg"
-            alt="mlh-logo"
-            width={200}
-            height={150}
-              className=" w-[100px] h-[100px] tablet:w-[125px] tablet:h-[125px] laptop:w-[150px] laptop:h-[150px] desktop:w-full desktop:h-full"
-          />
-        </a>
-      }
 
-      
       {/* LOGO */}
       <div className="flex justify-center items-center w-min z-50">
         <button onClick={() => scrollToSection('hero')} className=" text-[35px] transition-transform duration-300 cursor-pointer pl-4 hover:animate-pulse">SharkByte</button>
