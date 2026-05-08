@@ -16,6 +16,11 @@ ex.
   --breakpoint-desktop: 1025px;
 }
 
+/* custom utility class for pixelated box style */
+.retro-box {
+  @apply bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 border-3 border-gray-600 text-white;
+}
+
 /* pseudo-class, defines highest level element */
 :root {
   --background: #fff;
