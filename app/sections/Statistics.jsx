@@ -10,6 +10,9 @@ const Statistics = () =>
     return (
 
         <section id = "statistics" className = "w-screen h-screen flex items-center justify-center relative overflow-hidden stats-bg">
+            {/* THE LEFT SIDE BIRDS: inner birds start at width-40 and length-40 for phones, grow to width-50 and length-50 on tablets/laptops */}
+            <img className="relative flex w-50 h-50 laptop:left-5 animate-[bounce-high_6s_ease-in-out_infinite]" src='/Pixel Bird.png' alt="Bird1" />
+            <img className="relative flex w-40 h-40 left-10 tablet:w-50 tablet:h-50 laptop:w-50 laptop:h-50 desktop:w-50 desktop:h-50 animate-[bounce-high_6s_ease-in-out_infinite]" src='/Pixel Bird.png' alt="Bird2" /> 
 
             {/* THE BOX: Starts at p-8 for phones, grows to p-16 on tablets/laptops */}
             <div className = "bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white border-3 border-gray-600 pixel-shadow p-8 tablet:p-12 laptop:p-16 desktop:p-18">
@@ -25,6 +28,9 @@ const Statistics = () =>
                 </div>
 
             </div>
+            {/* THE RIGHT SIDE BIRDS: inner birds start at width-40 and length-40 for phones, grow to width-50 and length-50 on tablets/laptops */}
+            <img className="relative flex w-40 h-40 right-10 tablet:w-50 tablet:h-50 laptop:w-50 laptop:h-50 desktop:w-50 desktop:h-50 animate-[bounce-high_6s_ease-in-out_infinite]" src='/Pixel Bird.png' alt="Bird3" /> 
+            <img className="relative flex w-50 h-50 laptop:right-5 animate-[bounce-high_6s_ease-in-out_infinite]" src='/Pixel Bird.png' alt="Bird4" /> 
 
     </section>
 

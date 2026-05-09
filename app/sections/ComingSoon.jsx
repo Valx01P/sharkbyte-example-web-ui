@@ -8,9 +8,12 @@ const ComingSoon = () =>
 
             {/* THE BOX: Starts at p-8 for phones, grows to p-16 on tablets/laptops */}
             <div className = "w-[65vw] tablet:w-[55vw] laptop:w-[45vw] desktop:w-[40vw] h-auto min-h-[200px] bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white border-3 border-gray-600 pixel-shadow p-8 tablet:p-10 laptop:p-12 desktop:p-14 relative">
-                 {/* <img className="absolute h-50 top-33 left-195 transform -translate-x-50 -translate-y-50" src='/Water Drop.gif' alt="" /> */}
                 {/* THE TEXT: Starts at text-2xl for phones, grows to text-4xl on tablets/laptops */}
-                <h2 className="font-bold text-2xl tablet:text-4xl laptop:text-6xl desktop:text-7xl">SEA YOU SOON. WE'RE COMING BACK WITH A SPLASH!!!</h2>
+                <h2 className="font-bold text-2xl tablet:text-4xl laptop:text-6xl desktop:text-7xl">
+                    SEA YOU SOON. WE'RE COMING BACK WITH A <span className="relative inline-block">SPLASH!!!
+                        <img className="absolute top-1/2 left-full ml-2 h-30 w-auto -translate-y-1/2" src="/Water Drop.gif" alt="Water drop" />
+                    </span>
+                </h2>
 
             </div>
 
