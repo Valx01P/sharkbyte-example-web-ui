@@ -123,7 +123,7 @@ const Sponsors = () => {
         {/* TITLE */}
         <div className="mb-3 max-[850px]:mb-2 max-[750px]:mb-1.5 max-[650px]:mb-1 relative">
           <div className="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-white px-4 py-2 border-3 border-gray-600 pixel-shadow max-[850px]:px-3 max-[850px]:py-1.5 max-[650px]:px-3 max-[650px]:py-1">
-            <h1 className="font-bold text-center text-[30px] laptop:text-[40px] desktop:text-[50px]">Sponsored By</h1>
+            <h1 className="font-bold text-center text-[30px] laptop:text-[40px] desktop:text-[50px]">Previous Sponsors</h1>
           </div>
         </div>
 
